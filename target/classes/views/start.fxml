@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="365.0" minWidth="600.0" prefHeight="365.0" prefWidth="600.0" styleClass="window" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.idzodev.ui.start.StartScreen">
+   <stylesheets>
+      <URL value="@start.css" />
+   </stylesheets>
+   <left>
+      <VBox alignment="CENTER_LEFT" prefHeight="317.0" prefWidth="318.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT">
+               <children>
+                  <Label layoutX="31.0" layoutY="39.0" text="REMOTE" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="CONTROL-S" textFill="#ff6624">
+                     <font>
+                        <Font name="Tahoma Bold" size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" right="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label lineSpacing="1.0" prefHeight="35.0" prefWidth="276.0" text="RC-S - application which comunicate with your device to make action in computer." textFill="#7e7b79" textOverrun="CLIP" wrapText="true">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Tahoma" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="CENTER" prefHeight="317.0" prefWidth="307.0" styleClass="mainWindowBg" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="442.0" prefWidth="282.0" VBox.vgrow="NEVER">
+               <center>
+                  <ToggleButton fx:id="btStart" mnemonicParsing="false" onAction="#onStartClick" styleClass="mainButton" BorderPane.alignment="CENTER" />
+               </center>
+               <top>
+                  <AnchorPane>
+                     <children>
+                        <HBox alignment="TOP_RIGHT" maxHeight="48.0" minHeight="48.0" prefHeight="48.0" prefWidth="282.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="btSettings" mnemonicParsing="false" onAction="#onSettingsClick" styleClass="buttonSettings" HBox.hgrow="NEVER" />
+                              <Button fx:id="btExit" mnemonicParsing="false" onAction="#onExitClick" styleClass="buttonExit">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </top>
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="48.0" prefWidth="282.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lbState" text="Worked" textFill="WHITE" />
+                     </children></HBox>
+               </bottom>
+            </BorderPane>
+         </children>
+      </VBox>
+   </right>
+
+</BorderPane>

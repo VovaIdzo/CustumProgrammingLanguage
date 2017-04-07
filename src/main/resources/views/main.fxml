@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="365.0" minWidth="600.0" prefHeight="600.0" prefWidth="1000.0" styleClass="window" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.idzodev.controller.MainController">
+    <stylesheets>
+        <URL value="@main.css" />
+    </stylesheets>
+   <top>
+              <HBox alignment="CENTER_LEFT" maxHeight="48.0" minHeight="48.0" prefHeight="48.0" prefWidth="282.0" BorderPane.alignment="CENTER">
+                  <children>
+                      <Button fx:id="btNew" mnemonicParsing="false" onAction="#onOpenNewFile" styleClass="buttonNew" HBox.hgrow="NEVER" />
+            <Button fx:id="btSave" mnemonicParsing="false" onAction="#onSaveAll" styleClass="buttonSave" />
+            <Button fx:id="btRefresh" mnemonicParsing="false" onAction="#onRefresh" styleClass="buttonRefresh" />
+            <Button fx:id="btRun" mnemonicParsing="false" onAction="#onRun" styleClass="buttonRun" />
+            <Button fx:id="btBuild" mnemonicParsing="false" onAction="#onBuild" styleClass="buttonBuild" />
+                  </children>
+              </HBox>
+   </top>
+   <left>
+      <TreeView fx:id="fileTree" prefHeight="200.0" prefWidth="200.0" styleClass="tree-cell" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <TabPane fx:id="tabs" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <BorderPane fx:id="consoleContainer" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <TextArea fx:id="console" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <Button fx:id="consoleClose" mnemonicParsing="false" BorderPane.alignment="TOP_CENTER" onAction="#onConsoleClose" styleClass="buttonCancel" />
+         </right>
+      </BorderPane>
+   </bottom>
+
+</BorderPane>

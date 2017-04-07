@@ -1,0 +1,112 @@
+.window{
+    -fx-background-color: #102331;
+}
+
+
+.tree-cell:expanded {
+    -fx-background-color: #0E1E28;
+}
+
+.tree-cell:hover {
+    -fx-text-fill: #008BF3;
+}
+
+
+.tree-cell {
+    -fx-background-color: #0E1E28 ;
+    -fx-text-fill: #8899A6;
+}
+
+.buttonNew {
+    -fx-background-color: #102331;
+    -fx-min-width: 26px;
+    -fx-min-height: 26px;
+    -fx-max-width: 26px;
+    -fx-max-height: 26px;
+    -fx-background-image: url("../icons/ic_create.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.buttonNew:pressed {
+    -fx-background-image: url("../icons/ic_create_a.png");
+}
+
+.buttonSave {
+    -fx-background-color: #102331;
+    -fx-min-width: 26px;
+    -fx-min-height: 26px;
+    -fx-max-width: 26px;
+    -fx-max-height: 26px;
+    -fx-background-image: url("../icons/ic_save.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.buttonSave:pressed {
+    -fx-background-image: url("../icons/ic_save_a.png");
+}
+
+.buttonRefresh {
+    -fx-background-color: #102331;
+    -fx-min-width: 26px;
+    -fx-min-height: 26px;
+    -fx-max-width: 26px;
+    -fx-max-height: 26px;
+    -fx-background-image: url("../icons/ic_refresh.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.buttonRefresh:pressed {
+    -fx-background-image: url("../icons/ic_refresh_a.png");
+}
+
+.buttonRun {
+    -fx-background-color: #102331;
+    -fx-min-width: 26px;
+    -fx-min-height: 26px;
+    -fx-max-width: 26px;
+    -fx-max-height: 26px;
+    -fx-background-image: url("../icons/ic_play.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.buttonRun:pressed {
+    -fx-background-image: url("../icons/ic_play_a.png");
+}
+
+.buttonBuild {
+    -fx-background-color: #102331;
+    -fx-min-width: 26px;
+    -fx-min-height: 26px;
+    -fx-max-width: 26px;
+    -fx-max-height: 26px;
+    -fx-background-image: url("../icons/ic_build.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.buttonBuild:pressed {
+    -fx-background-image: url("../icons/ic_build_a.png");
+}
+
+
+.buttonCancel{
+    -fx-background-color: #102331;
+    -fx-min-width: 26px;
+    -fx-min-height: 26px;
+    -fx-max-width: 26px;
+    -fx-max-height: 26px;
+    -fx-background-image: url("../icons/cancel.png");
+    -fx-background-size: 16px 16px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+

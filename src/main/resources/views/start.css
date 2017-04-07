@@ -1,0 +1,69 @@
+/* colorPrimary - #3F3437 */
+/* windowsBg - #4C3E41 */
+/* colorPrimaryDark - #342B2D */
+/* colorSecondaryText - #7E7B79 */
+/* colorPrimaryDark - #342B2D */
+/* accent - #FF6624 */
+
+.mainWindowBg {
+    -fx-background-color: #3F3437;
+}
+
+.mainButton {
+    -fx-background-color: #4C3E41;
+    -fx-background-radius: 10em;
+    -fx-min-width: 150px;
+    -fx-min-height: 150px;
+    -fx-max-width: 150px;
+    -fx-max-height: 150px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+    -fx-background-image: url("../icons/ic_play.png");
+	-fx-background-size: 30px 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;   
+}
+
+.mainButton:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.window {
+    -fx-background-color: #4C3E41;
+}
+
+.mainButton:selected {
+    -fx-background-color: #FF6624;
+    -fx-background-image: url("../icons/ic_stop.png");
+}
+
+.buttonExit {
+    -fx-background-color: #3F3437;
+    -fx-min-width: 48px;
+    -fx-min-height: 48px;
+    -fx-max-width: 48px;
+    -fx-max-height: 48px;
+    -fx-background-image: url("../icons/ic_exit.png");
+    -fx-background-size: 20px 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.buttonExit:pressed {
+    -fx-background-image: url("../icons/ic_exit_act.png");
+}
+
+.buttonSettings {
+    -fx-background-color: #3F3437;
+    -fx-min-width: 48px;
+    -fx-min-height: 48px;
+    -fx-max-width: 48px;
+    -fx-max-height: 48px;
+    -fx-background-image: url("../icons/ic_settings.png");
+    -fx-background-size: 20px 20px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position:center;
+}
+
+.buttonSettings:pressed {
+    -fx-background-image: url("../icons/ic_settings_action.png");
+}
